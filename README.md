@@ -2,7 +2,7 @@
 Custom layout for 2 animated titles into CollapsingToolbarLayout
 
 ## Screenshots
-![screenshot](https://raw.githubusercontent.com/nikartm/Android-Widget/master/screenshots/)
+![screenshot](https://raw.githubusercontent.com/nikartm/Android-Widget/master/screenshots/screenshot.gif)
 
 ## How to use?
 Adjust the xml view [Example](https://github.com/nikartm/Android-Widget/blob/master/app/src/main/res/layout/activity_main.xml):
