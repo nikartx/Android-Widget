@@ -105,8 +105,7 @@ public class CollapsingTitleLayout extends LinearLayout {
 
     private void animateTitles() {
         float scale = calculateScale();
-        float scaleRate = scale * (scale * 2) / 2;
-        float factor = Math.round(scaleRate * 100f) / 100f;
+        float factor = scale * (scale * 2) / 2;
         if (factor < VISIBLE_FACTOR) {
             tvTitle.setVisibility(INVISIBLE);
             tvSubtitle.setVisibility(INVISIBLE);
