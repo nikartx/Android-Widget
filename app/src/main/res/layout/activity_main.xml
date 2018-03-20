@@ -52,6 +52,7 @@
                 android:id="@+id/titleLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="75dp"
                 app:ctl_textTitle="@string/title"
                 app:ctl_titleTextSize="34sp"
                 app:ctl_titleColor="@color/colorWhite"

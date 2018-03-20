@@ -64,7 +64,7 @@ public class CollapsingTitleLayout extends LinearLayout {
     }
 
     private void initTitles() {
-        defineSizes();
+        defineTitlesSizes();
         tvTitle.setText(title);
         tvTitle.setTextSize(titleSize);
         tvTitle.setTextColor(titleColor);
@@ -73,7 +73,7 @@ public class CollapsingTitleLayout extends LinearLayout {
         tvSubtitle.setTextColor(subtitleColor);
     }
 
-    private void defineSizes() {
+    private void defineTitlesSizes() {
         titleSize = titleSize / density;
         subtitleSize = subtitleSize / density;
     }
