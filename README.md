@@ -1,5 +1,6 @@
 # CollapsingTitleLayout
-Custom layout for 2 animated titles into CollapsingToolbarLayout
+In CollapsingToolbarLayout we can create only one animated title, but this solution eliminates this drawback.
+Example custom layout for 2 animated titles into CollapsingToolbarLayout.
 
 ## Screenshots
 ![screenshot](https://raw.githubusercontent.com/nikartm/Android-Widget/master/screenshots/screenshot.gif)
