@@ -30,3 +30,11 @@ Adjust the xml view [Example](https://github.com/nikartm/Android-Widget/blob/mas
     </android.support.design.widget.AppBarLayout>
 </android.support.design.widget.CoordinatorLayout>
 ```
+Or programmatically:
+```
+titleLayout.setAllTitles(getString(R.string.title), getString(R.string.subtitle))
+        .setTitleSize(40)
+        .setTitleColor(getResources().getColor(R.color.colorAccent))
+        .setSubTitleSize(16)
+        .setSubTitleColor(getResources().getColor(R.color.colorAccent));
+```

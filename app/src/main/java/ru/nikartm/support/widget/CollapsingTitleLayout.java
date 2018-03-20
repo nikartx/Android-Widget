@@ -144,7 +144,7 @@ public class CollapsingTitleLayout extends LinearLayout {
         return tvSubtitle;
     }
 
-    public CollapsingTitleLayout setText(String title, String subTitle) {
+    public CollapsingTitleLayout setAllTitles(String title, String subTitle) {
         this.tvTitle.setText(title);
         this.tvSubtitle.setText(subTitle);
         invalidate();
