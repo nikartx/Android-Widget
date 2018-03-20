@@ -16,4 +16,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Hide title into CollapsingToolbarLayout -->
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
 </resources>

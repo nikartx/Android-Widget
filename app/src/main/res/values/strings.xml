@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android-Widget</string>
+    <string name="title">Main Title</string>
+    <string name="subtitle">Example of a short subtitle about something</string>
 </resources>

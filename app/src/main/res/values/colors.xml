@@ -7,4 +7,6 @@
     <color name="colorText">#212121</color>
     <color name="colorTextLight">#757575</color>
 
+    <color name="colorWhite">#ffffff</color>
+
 </resources>
