@@ -118,7 +118,7 @@ public class CollapsingTitleLayout extends LinearLayout {
             tvTitle.setAlpha(factor);
             tvSubtitle.setAlpha(factor);
         }
-        invalidate();
+        requestLayout();
     }
 
     private int getAppBarScrollHeight() {
@@ -141,13 +141,6 @@ public class CollapsingTitleLayout extends LinearLayout {
 
     public TextView getSubtitle() {
         return tvSubtitle;
-    }
-
-    public CollapsingTitleLayout setAllTitles(String title, String subTitle) {
-        this.tvTitle.setText(title);
-        this.tvSubtitle.setText(subTitle);
-        invalidate();
-        return this;
     }
 
     public CollapsingTitleLayout setTitle(String title) {

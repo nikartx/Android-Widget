@@ -21,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initTitles() {
-        titleLayout.setAllTitles(getString(R.string.title), getString(R.string.subtitle))
-                .setTitleSize(40)
+        titleLayout.setTitle(getString(R.string.title))
+                .setSubTitle(getString(R.string.subtitle))
                 .setTitleColor(getResources().getColor(R.color.colorAccent))
-                .setSubTitleSize(16)
-                .setSubTitleColor(getResources().getColor(R.color.colorAccent));
+                .setSubTitleColor(getResources().getColor(R.color.colorAccent))
+                .setTitleSize(40)
+                .setSubTitleSize(16);
     }
 }

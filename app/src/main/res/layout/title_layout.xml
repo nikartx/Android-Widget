@@ -12,6 +12,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="5sp"
+            android:maxLines="2"
+            android:ellipsize="marquee"
             tools:textSize="34sp"
             tools:textColor="#888"
             tools:text="Title" />
@@ -23,6 +26,8 @@
             android:layout_marginTop="4dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
+            android:maxLines="2"
+            android:ellipsize="marquee"
             tools:textSize="16sp"
             tools:textColor="#888"
             tools:text="Example subtitle" />
