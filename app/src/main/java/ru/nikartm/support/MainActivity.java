@@ -1,31 +1,24 @@
 package ru.nikartm.support;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import ru.nikartm.support.widget.CollapsingTitleLayout;
+import ru.nikartm.support.fragment.NavigationFragment;
 
 public class MainActivity extends AppCompatActivity {
-
-    @BindView(R.id.titleLayout)
-    protected CollapsingTitleLayout titleLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-//        initTitles();
+        startFragment(new NavigationFragment());
     }
 
-    private void initTitles() {
-        titleLayout.setTitle(getString(R.string.title))
-                .setSubTitle(getString(R.string.subtitle))
-                .setTitleColor(getResources().getColor(R.color.colorAccent))
-                .setSubTitleColor(getResources().getColor(R.color.colorAccent))
-                .setTitleSize(40)
-                .setSubTitleSize(16);
+    public void startFragment(Fragment fragment) {
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.main_container, fragment)
+                .commit();
     }
+
 }
