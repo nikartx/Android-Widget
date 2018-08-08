@@ -9,4 +9,9 @@
         <attr name="ctl_titleColor" format="color" />
         <attr name="ctl_subtitleColor" format="color" />
     </declare-styleable>
+
+    <declare-styleable name="CollapsingViewBehavior">
+        <attr name="target_place" format="reference" />
+    </declare-styleable>
+
 </resources>
