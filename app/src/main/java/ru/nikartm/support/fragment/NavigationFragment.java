@@ -40,7 +40,7 @@ public class NavigationFragment extends Fragment {
 
     @OnClick(R.id.tv_avatar_layout)
     protected void onAvatarLayout() {
-
+        startFragment(new CollapsingAvatarFragment(), true);
     }
 
     public void startFragment(Fragment fragment, boolean addToBackStack) {
