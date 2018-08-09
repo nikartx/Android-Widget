@@ -42,7 +42,7 @@ titleLayout.setTitle(getString(R.string.title))
 ```
 
 # CollapsingViewBehavior
-CollapsingViewBehavior to expand or collapse view to target place
+CollapsingViewBehavior to expand or collapse view to target place. You can use this behavior with ImageView, TextView, Switch e.t.c. Or your anyone custom view.
 
 ## Screenshots
 ![screenshot](https://raw.githubusercontent.com/nikartm/Android-Widget/master/screenshots/screenshot2.gif)
