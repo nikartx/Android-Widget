@@ -78,3 +78,11 @@ Adjust the xml view [Example](https://github.com/nikartm/Android-Widget/blob/mas
             
 </android.support.design.widget.CoordinatorLayout>
 ```
+Add to /values/attr.xml [Example](https://github.com/nikartm/Android-Widget/blob/master/app/src/main/res/values/attr.xml)
+```
+<resources>
+    <declare-styleable name="CollapsingViewBehavior">
+        <attr name="target_place" format="reference" />
+    </declare-styleable>
+</resources>
+```
