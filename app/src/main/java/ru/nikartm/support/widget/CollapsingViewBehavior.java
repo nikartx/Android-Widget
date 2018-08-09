@@ -56,8 +56,10 @@ public class CollapsingViewBehavior extends CoordinatorLayout.Behavior<View> {
         AppBarLayout appBar = (AppBarLayout) dependency;
         int range = appBar.getTotalScrollRange();
         float factor = -appBar.getY() / range;
+        int hfParentWidth = -appBar.getWidth() / 2;
+        int hfTargetViewWidth = targetView[WIDTH] / 2;
 
-        int left = (int) (factor * (targetView[X]- view[X] - targetView[WIDTH])) - (int) (factor * view[Y] / 2);
+        int left = (int) (factor * (targetView[X] + hfTargetViewWidth + hfParentWidth));
         int top = (int) (factor * (targetView[Y] - view[Y]));
         int width = view[WIDTH] + (int) (factor * (targetView[WIDTH] - view[WIDTH]));
         int height = view[HEIGHT] + (int) (factor * (targetView[HEIGHT] - view[HEIGHT]));
@@ -91,10 +93,10 @@ public class CollapsingViewBehavior extends CoordinatorLayout.Behavior<View> {
         if (target == null) {
             throw new IllegalStateException("target view not found");
         }
-        targetView[WIDTH] = target.getWidth();
-        targetView[HEIGHT] = target.getHeight();
         targetView[X] = (int) target.getX();
         targetView[Y] = (int) target.getY();
+        targetView[WIDTH] = target.getWidth();
+        targetView[HEIGHT] = target.getHeight();
     }
 
 }

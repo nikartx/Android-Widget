@@ -64,8 +64,8 @@
         android:layout_marginTop="30dp"
         app:target_place="@id/target_place"
         app:layout_behavior="ru.nikartm.support.widget.CollapsingViewBehavior"
-        android:layout_gravity="center_horizontal"
         android:elevation="5dp"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/avatar"/>
 
     <android.support.v4.widget.NestedScrollView
